@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>motor controller</title>
+    <link rel="stylesheet" href="motor.css">
+</head>
+<body>
+  <form action="phpTest (2).php" method="POST" id="form1">
+    <div class="main">motor controller</div>
+    <div class="container">
+          <label for="motor1">motor 1</label>
+          <input type="range" name="motorvalue1" min="0" max="180" value="0" step="1" list="tickmarks" 
+          id="rangeInput1" oninput="output.value = rangeInput1.value">
+              <datalist id="tickmarks">
+                <option value="0 to 20">0</option>
+                <option>20</option>
+                <option>40</option>
+                <option>60</option>
+                <option>80</option>
+                <option>100</option>
+                <option>120</option>
+                <option>140</option>
+                <option>160</option>
+                <option>180</option>
+              </datalist>
+          <output id="output" for="rangeInput1">0</output> <!-- Just to display selected value -->
+      </div>
+      <div class="container">
+        <label for="motor2">motor 2</label>
+        <input type="range" name="motorvalue2" min="0" max="180" value="0" step="1" list="tickmarks2" id="rangeInput2" oninput="output2.value = rangeInput2.value">
+        <datalist id="tickmarks2">
+          <option value="0 to 20">0</option>
+          <option>20</option>
+          <option>40</option>
+          <option>60</option>
+          <option>80</option>
+          <option>100</option>
+          <option>120</option>
+          <option>140</option>
+          <option>160</option>
+          <option>180</option>
+        </datalist>
+        <output id="output2" for="rangeInput2">0</output> <!-- Just to display selected value -->
+      </div>
+      <div class="container">
+        <label for="motor3">motor 3</label>
+        <input type="range" name="motorvalue3" min="0" max="180" value="0" step="1" list="tickmarks3" id="rangeInput3" oninput="output3.value = rangeInput3.value">
+        <datalist id="tickmarks3">
+          <option value="0 to 20">0</option>
+          <option>20</option>
+          <option>40</option>
+          <option>60</option>
+          <option>80</option>
+          <option>100</option>
+          <option>120</option>
+          <option>140</option>
+          <option>160</option>
+          <option>180</option>
+        </datalist>
+        <output id="output3" for="rangeInput3">0</output> <!-- Just to display selected value -->
+      </div>
+      <div class="container">
+        <label for="motor4">motor 4</label>
+        <input type="range" name="motorvalue4" min="0" max="180" value="0" step="1" list="tickmarks4" id="rangeInput4" oninput="output4.value = rangeInput4.value">
+        <datalist id="tickmarks3">
+          <option value="0 to 20">0</option>
+          <option>20</option>
+          <option>40</option>
+          <option>60</option>
+          <option>80</option>
+          <option>100</option>
+          <option>120</option>
+          <option>140</option>
+          <option>160</option>
+          <option>180</option>
+        </datalist>
+        <output id="output4" for="rangeInput4">0</output> <!-- Just to display selected value -->
+      </div>
+      <div class="container">
+        <label for="motor5">motor 5</label>
+        <input type="range" name="motorvalue5" min="0" max="180" value="0" step="1" list="tickmarks5" id="rangeInput5" oninput="output5.value = rangeInput5.value">
+        <datalist id="tickmarks5">
+          <option value="0 to 20">0</option>
+          <option>20</option>
+          <option>40</option>
+          <option>60</option>
+          <option>80</option>
+          <option>100</option>
+          <option>120</option>
+          <option>140</option>
+          <option>160</option>
+          <option>180</option>
+        </datalist>
+        <output id="output5" for="rangeInput5">0</output> <!-- Just to display selected value -->
+      </div>
+      <div class="container">
+        <label for="motor6">motor 6</label>
+        <input type="range" name="motorvalue6" min="0" max="180" value="0" step="1" list="tickmarks6" id="rangeInput6" oninput="output6.value = rangeInput6.value">
+        <datalist id="tickmarks6">
+          <option value="0 to 20">0</option>
+          <option>20</option>
+          <option>40</option>
+          <option>60</option>
+          <option>80</option>
+          <option>100</option>
+          <option>120</option>
+          <option>140</option>
+          <option>160</option>
+          <option>180</option>
+        </datalist>
+        <output id="output6" for="rangeInput6">0</output> <!-- Just to display selected value -->
+      </div>
+      <button type="submit" value="Submit" name="save" >save</button>
+      <button type="submit" value = "ON" name = "onvalue"  >On</button>
+      <a href="controlPanel.html">control Panel</a>
+  </form>
+  <script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "fca9b7ca-a84a-49a8-aad4-93cdbe91a8aa", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "d28f89b7-1e3c-471b-80d1-03e46acb8fa2", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
+      
+      
+</body>
+</html>
